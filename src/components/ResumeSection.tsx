@@ -4,6 +4,12 @@ import { Button } from '@/components/ui/button';
 import { Download, ExternalLink, Eye } from 'lucide-react';
 
 export function ResumeSection() {
+  const resumeUrl = "https://drive.google.com/file/d/1E0gSB3AliqaofNRE9z3anJYve8WBAUJL/view?usp=sharing";
+  const resumeDownloadUrl = "https://drive.google.com/uc?export=download&id=1E0gSB3AliqaofNRE9z3anJYve8WBAUJL";
+  const linkedInUrl = "https://linkedin.com/in/mohammed-umar-adnaan-faiz/";
+  const githubUrl = "https://github.com/umaradnaan123";
+  const kaggleUrl = "https://www.kaggle.com/umeradnaan";
+
   return (
     <section id="resume" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-4xl mx-auto">
@@ -32,11 +38,18 @@ export function ResumeSection() {
               </div>
               
               <div className="space-y-3">
-                <Button className="w-full hover:scale-105 transition-transform">
+                <Button 
+                  className="w-full hover:scale-105 transition-transform"
+                  onClick={() => window.open(resumeDownloadUrl, '_blank')}
+                >
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume (PDF)
                 </Button>
-                <Button variant="outline" className="w-full hover:scale-105 transition-transform">
+                <Button 
+                  variant="outline" 
+                  className="w-full hover:scale-105 transition-transform"
+                  onClick={() => window.open(resumeUrl, '_blank')}
+                >
                   <Eye className="mr-2 h-4 w-4" />
                   Preview Resume
                 </Button>
@@ -58,15 +71,27 @@ export function ResumeSection() {
               </div>
               
               <div className="space-y-3">
-                <Button variant="outline" className="w-full hover:scale-105 transition-transform">
+                <Button 
+                  variant="outline" 
+                  className="w-full hover:scale-105 transition-transform"
+                  onClick={() => window.open(linkedInUrl, '_blank')}
+                >
                   <ExternalLink className="mr-2 h-4 w-4" />
                   View LinkedIn Profile
                 </Button>
-                <Button variant="outline" className="w-full hover:scale-105 transition-transform">
+                <Button 
+                  variant="outline" 
+                  className="w-full hover:scale-105 transition-transform"
+                  onClick={() => window.open(githubUrl, '_blank')}
+                >
                   <ExternalLink className="mr-2 h-4 w-4" />
                   GitHub Portfolio
                 </Button>
-                <Button variant="outline" className="w-full hover:scale-105 transition-transform">
+                <Button 
+                  variant="outline" 
+                  className="w-full hover:scale-105 transition-transform"
+                  onClick={() => window.open(kaggleUrl, '_blank')}
+                >
                   <ExternalLink className="mr-2 h-4 w-4" />
                   Kaggle Profile
                 </Button>
@@ -82,12 +107,19 @@ export function ResumeSection() {
             <div className="bg-muted/50 rounded-lg p-8 min-h-[400px] flex items-center justify-center">
               <div className="text-center">
                 <div className="text-6xl mb-4">📄</div>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground mb-4">
                   Resume preview will be displayed here
                 </p>
-                <p className="text-sm text-muted-foreground mt-2">
+                <p className="text-sm text-muted-foreground mb-4">
                   Click "Preview Resume" or "Download Resume" to view the full document
                 </p>
+                <Button 
+                  variant="outline"
+                  onClick={() => window.open(resumeUrl, '_blank')}
+                >
+                  <ExternalLink className="mr-2 h-4 w-4" />
+                  Open Resume in New Tab
+                </Button>
               </div>
             </div>
           </CardContent>
