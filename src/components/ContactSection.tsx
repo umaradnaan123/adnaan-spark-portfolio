@@ -150,7 +150,7 @@ export function ContactSection() {
                     </div>
                     <div>
                       <h3 className="font-semibold">Email</h3>
-                      <p className="text-muted-foreground">adnaan.faiz@example.com</p>
+                      <p className="text-muted-foreground">adnaanaddu1929@gmail.com</p>
                     </div>
                   </div>
                   
@@ -160,7 +160,7 @@ export function ContactSection() {
                     </div>
                     <div>
                       <h3 className="font-semibold">Location</h3>
-                      <p className="text-muted-foreground">Chennai, India</p>
+                      <p className="text-muted-foreground">Kurnool, Andhra Pradesh, India</p>
                     </div>
                   </div>
                 </div>
@@ -171,14 +171,20 @@ export function ContactSection() {
               <CardContent className="p-8">
                 <h3 className="font-semibold text-lg mb-6">Follow me on</h3>
                 <div className="flex space-x-4">
-                  <Button variant="outline" size="lg" className="hover:scale-110 transition-transform">
-                    <Github className="h-5 w-5" />
+                  <Button variant="outline" size="lg" className="hover:scale-110 transition-transform" asChild>
+                    <a href="https://github.com/umaradnaan123" target="_blank" rel="noopener noreferrer">
+                      <Github className="h-5 w-5" />
+                    </a>
                   </Button>
-                  <Button variant="outline" size="lg" className="hover:scale-110 transition-transform">
-                    <Linkedin className="h-5 w-5" />
+                  <Button variant="outline" size="lg" className="hover:scale-110 transition-transform" asChild>
+                    <a href="https://linkedin.com/in/mohammed-umar-adnaan-faiz/" target="_blank" rel="noopener noreferrer">
+                      <Linkedin className="h-5 w-5" />
+                    </a>
                   </Button>
-                  <Button variant="outline" size="lg" className="hover:scale-110 transition-transform">
-                    <Mail className="h-5 w-5" />
+                  <Button variant="outline" size="lg" className="hover:scale-110 transition-transform" asChild>
+                    <a href="mailto:adnaanaddu1929@gmail.com">
+                      <Mail className="h-5 w-5" />
+                    </a>
                   </Button>
                 </div>
               </CardContent>
@@ -187,11 +193,11 @@ export function ContactSection() {
             {/* Interactive Map Placeholder */}
             <Card className="bg-background/50 backdrop-blur-sm border-border/50">
               <CardContent className="p-8">
-                <h3 className="font-semibold text-lg mb-4">Find me in Chennai</h3>
+                <h3 className="font-semibold text-lg mb-4">Find me in Kurnool</h3>
                 <div className="bg-muted/50 rounded-lg h-48 flex items-center justify-center">
                   <div className="text-center">
                     <MapPin className="h-12 w-12 text-primary mx-auto mb-2" />
-                    <p className="text-muted-foreground">Chennai, India</p>
+                    <p className="text-muted-foreground">Kurnool, Andhra Pradesh, India</p>
                   </div>
                 </div>
               </CardContent>

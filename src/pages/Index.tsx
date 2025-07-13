@@ -8,6 +8,7 @@ import { SkillsSection } from '@/components/SkillsSection';
 import { ProjectsSection } from '@/components/ProjectsSection';
 import { ServicesSection } from '@/components/ServicesSection';
 import { AchievementsSection } from '@/components/AchievementsSection';
+import { BlogsSection } from '@/components/BlogsSection';
 import { ResumeSection } from '@/components/ResumeSection';
 import { ContactSection } from '@/components/ContactSection';
 import { FloatingThemeToggle } from '@/components/FloatingThemeToggle';
@@ -47,6 +48,7 @@ const Index = () => {
           <ProjectsSection />
           <ServicesSection />
           <AchievementsSection />
+          <BlogsSection />
           <ResumeSection />
           <ContactSection />
         </main>

@@ -34,21 +34,25 @@ export function HeroSection() {
                 <Download className="mr-2 h-4 w-4" />
                 Resume
               </Button>
-              <Button variant="outline" size="lg" className="hover:scale-105 transition-transform">
-                <Github className="mr-2 h-4 w-4" />
-                GitHub
+              <Button variant="outline" size="lg" className="hover:scale-105 transition-transform" asChild>
+                <a href="https://github.com/umaradnaan123" target="_blank" rel="noopener noreferrer">
+                  <Github className="mr-2 h-4 w-4" />
+                  GitHub
+                </a>
               </Button>
-              <Button variant="outline" size="lg" className="hover:scale-105 transition-transform">
-                <Mail className="mr-2 h-4 w-4" />
-                Contact
+              <Button variant="outline" size="lg" className="hover:scale-105 transition-transform" asChild>
+                <a href="mailto:adnaanaddu1929@gmail.com">
+                  <Mail className="mr-2 h-4 w-4" />
+                  Contact
+                </a>
               </Button>
             </div>
             
             <div className="flex justify-center lg:justify-start space-x-6 mt-8">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://linkedin.com/in/mohammed-umar-adnaan-faiz/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://github.com/umaradnaan123" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Github className="h-6 w-6" />
               </a>
             </div>

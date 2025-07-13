@@ -32,17 +32,23 @@ export function AboutSection() {
             </Card>
             
             <div className="flex flex-wrap gap-4">
-              <Button variant="outline" className="hover:scale-105 transition-transform">
-                <Linkedin className="mr-2 h-4 w-4" />
-                LinkedIn
+              <Button variant="outline" className="hover:scale-105 transition-transform" asChild>
+                <a href="https://linkedin.com/in/mohammed-umar-adnaan-faiz/" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="mr-2 h-4 w-4" />
+                  LinkedIn
+                </a>
               </Button>
-              <Button variant="outline" className="hover:scale-105 transition-transform">
-                <Github className="mr-2 h-4 w-4" />
-                GitHub
+              <Button variant="outline" className="hover:scale-105 transition-transform" asChild>
+                <a href="https://github.com/umaradnaan123" target="_blank" rel="noopener noreferrer">
+                  <Github className="mr-2 h-4 w-4" />
+                  GitHub
+                </a>
               </Button>
-              <Button variant="outline" className="hover:scale-105 transition-transform">
-                <ExternalLink className="mr-2 h-4 w-4" />
-                Portfolio GitHub
+              <Button variant="outline" className="hover:scale-105 transition-transform" asChild>
+                <a href="https://github.com/umaradnaan123" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="mr-2 h-4 w-4" />
+                  Portfolio GitHub
+                </a>
               </Button>
             </div>
           </div>
@@ -68,7 +74,7 @@ export function AboutSection() {
                     </div>
                     <div>
                       <h3 className="font-semibold">Location</h3>
-                      <p className="text-sm text-muted-foreground">Chennai, India</p>
+                      <p className="text-sm text-muted-foreground">Kurnool, Andhra Pradesh, India</p>
                     </div>
                   </div>
                   
